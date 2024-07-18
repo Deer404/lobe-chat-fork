@@ -10,7 +10,7 @@ import { DEFAULT_LANG, LOBE_LOCALE_COOKIE } from '@/const/locale';
 import AuthProvider from '@/layout/AuthProvider';
 import GlobalProvider from '@/layout/GlobalProvider';
 import { isMobileDevice } from '@/utils/responsive';
-
+export const runtime = 'edge';
 const PWAInstall = dynamic(() => import('@/features/PWAInstall'), { ssr: false });
 const inVercel = process.env.VERCEL === '1';
 
